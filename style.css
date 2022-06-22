@@ -1,0 +1,134 @@
+
+
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body
+{
+ max-width:760px
+ height:100vh;
+ margin:auto auto auto auto;
+ transition:.2s ease-in;
+ border:5px solid #333;
+}
+
+.game_container
+{
+ margin:10px auto 0;
+ position:relative;
+ width:270px;
+ height:350px;
+ border:none;
+ 
+ overflow:hidden;
+}
+#block
+{
+ width:90px;
+ height:85px;
+ background:red;
+ position : absolute;
+ animation: anim 1s  infinite;
+}
+@keyframes anim 
+{
+ from
+{
+ top:0;
+ transform: rotate(180deg);
+}
+to
+{
+ top:100%;
+ border-radius:50%;
+}
+
+}
+
+#character
+{
+ width:90px;
+ height:85px;
+ background:blue;
+ position: absolute;
+ bottom:0;
+ padding:5px;
+ transition: .2s;
+}
+
+.controls 
+{
+ margin:20px auto 0;
+ width:100%;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+.controls button
+{
+ display:block;
+ padding:10px 32px;
+ margin:15px;
+ border: 1px solid #f1f1f1;
+ background:#fa8d68;
+ color:#fff;
+ font-size: 1.2em;
+}
+
+.scoreCounter 
+{
+ width:50%;
+ margin:5px auto 0;
+ text-align: center;
+}
+.scoreCounter span
+{
+ display: block;
+ font-size: 1.2em;
+ color:red;
+}
+
+.score_inner
+{
+ width:100%;
+ text-align: center;
+}
+.score_inner span
+{
+ display: block;
+}
+
+
+.startOver
+{
+ margin:10px auto 0;
+ width:80%;
+ display:flex;
+ 
+ display: none;
+}
+
+.startOver button
+{
+ padding:10px 20px;
+ margin:0 auto 0;
+ display: block;
+ background:#fcc666;
+ border:1px solid #f1f1f1;
+ box-shadow: 0 0 3px inset #333;
+}
+.startOver button a
+{
+ text-decoration: none;
+ color:#444;
+}
+
+.share
+{
+ width:30%;
+
+}
